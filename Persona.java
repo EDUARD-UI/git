@@ -1,7 +1,7 @@
 
-import interfaces.Volar;
+import interfaces.*;
 
-public class Persona implements Volar{
+public class Persona implements Volar, Comer, Criticar{
     private String nombre;
     private String apellido;
 
@@ -13,6 +13,16 @@ public class Persona implements Volar{
     @Override
     public void volar(){
         System.out.println(nombre + " volando...");
+    }
+
+    @Override
+    public void criticar(){
+        System.out.println(nombre + " criticando...");
+    }
+
+    @Override
+    public void comer(){
+        System.out.println(nombre + " comiendo...");
     }
 
     public String getNombre() {
