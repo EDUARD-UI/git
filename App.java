@@ -7,5 +7,6 @@ public class App {
         persona2.comer();
 
         System.out.println(persona1);
+        System.out.println(persona2);
     }
 }
